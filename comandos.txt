@@ -1,1 +1,27 @@
-xd
+mkdir libro
+cd libro
+git init
+git status
+nano indice.txt
+git status
+git add indice.txt
+git status
+git commit -m "Añadido índice del libro"
+git status
+nano indice.txt
+git diff
+git add .
+git commit -m "Añadido capítulo 3 sobre gestión de ramas"
+git log
+mkdir capitulos
+cd capitulos/
+nano capitulo1.txt
+git add .
+git commit -m "Añadido capítulo 1."
+git log
+cd ..
+nano comandos.txt
+git add .
+git commit -m "File commandos agregados"
+git remote add origin git@github.com:cthulhuscode/cicio-git-1.git
+git push origin master
